@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hotel_rooms",
+  "info": {
+    "singularName": "hotel-room",
+    "pluralName": "hotel-rooms",
+    "displayName": "Hotel Room",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": false
+    },
+    "Price": {
+      "type": "integer"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Available": {
+      "type": "boolean"
+    }
+  }
+}
